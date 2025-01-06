@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Team</title>
+  <style>
+    body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar {
+    background-color: white;
+    overflow: hidden;
+    text-align: right;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar a {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s; /* Add transition effect */
+    margin-left: 10px;
+    position: relative; /* Add position relative for pseudo-element */
+}
+
+.navbar a::after { /* Pseudo-element for hover effect */
+    content: ''; 
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.navbar a:hover::after, .navbar a.active::after { /* Increase width on hover or when active */
+    width: 100%;
+}
+
+.navbar a:hover {
+    color: black;
+}
+
+.navbar a.active {
+    background-color: white;
+    color: black;
+}
+
+.container {
+    padding: 20px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.member-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    margin: 0 10px;
+    width: 200px;
+}
+
+.member-card img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="#container">Home</a>
+    <a href="#team-container">Team</a>
+    <a href="/index">Detect</a> <!-- Call JavaScript function to scroll to team section -->
+  </div>
+
+<div class="container" id="container">
+  <h2>About Age and Gender Prediction Using ML</h2>
+  <p>Age and gender prediction using machine learning algorithms has gained significant attention in recent years due to its wide range of applications in various industries. By analyzing facial features and patterns, machine learning models can accurately predict the age and gender of individuals with remarkable precision.</p>
+  <p>Machine learning models for age and gender prediction typically utilize deep learning techniques, such as convolutional neural networks (CNNs). These models are trained on large datasets containing labeled images of faces along with corresponding age and gender labels.
+
+    During the training process, the CNN learns to extract relevant features from facial images, such as wrinkles, facial contours, and hair patterns. These features are then fed into the network's layers, which perform nonlinear transformations to learn complex patterns and relationships between the input data and the target labels.
+    
+    Once the model is trained, it can be used to predict the age and gender of unseen faces with high accuracy. When presented with a new facial image, the model analyzes the features and patterns present in the image and outputs the predicted age range (e.g., 20-30 years old) and gender (e.g., male or female).</p>
+    <p>In conclusion, age and gender prediction using machine learning algorithms has the potential to revolutionize various industries by providing valuable insights into customer demographics and behavior. As the technology continues to advance, we can expect to see even more innovative applications and solutions in the future.</p>
+    
+</div>
+<h2>About Team</h2>
+<div class="team-container" id="team-container">
+  <div class="member-card">
+    <img src="../static/bhargav.jpg" alt="Team member name">
+    <h3>Bhargav</h3>
+    <p><b>Branch:</b>Cyber</p>
+    <p>Worked as Backend Developer</p>
+  </div>
+  <div class="member-card">
+    <img src="../static/sahidi.jpg" alt="Team member name">
+    <h3>Sahidhi</h3>
+    <p><b>Branch:</b>AID</p>
+    <P>worked as Reasearcher</P>
+  </div>
+  <div class="member-card">
+    <img src="../static/bhavya.jpg" alt="Team member 3 name">
+    <h3>Bhavya</h3>
+    <h3><b>Branch:</b>CSM</h3>
+    <p>Worked as Frontend Developer</p>
+  </div>
+  <div class="member-card">
+    <img src="../static/priya.jpg" alt="Team member 4 name">
+    <h3>Lakshmi Priya</h3>
+    <h3><b>Branch:</b>AID</h3>
+    <p>Worked as Backend Developer</p>
+  </div>
+</div>
+
+
+</body>
+</html>

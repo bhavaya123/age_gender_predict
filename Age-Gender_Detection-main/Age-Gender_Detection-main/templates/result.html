@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('../static/bg2.jpg'); /* Add the path to your background image */
+            background-size: cover;
+            
+            color: black; /* Adjust text color for better visibility */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #0b2fd0;
+            margin-top: 50px;
+            font-size:x-large;
+        }
+
+        p {
+            color: #110101;
+            margin: 10px 0;
+            font-size: x-large;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <p>Gender: {{ gender }}</p>
+    <p>Age: {{ age }}</p>
+    <a href="/index">Back to Upload</a>
+</body>
+</html>
